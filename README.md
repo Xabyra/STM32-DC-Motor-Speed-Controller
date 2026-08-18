@@ -27,9 +27,12 @@ The project is organized into two main parts:
 *   `Firmware/`: Contains the embedded software developed using PlatformIO.
 *   `Altium/`: Contains the hardware design files (schematics, PCB layout) created with Altium Designer.
 
+*   **`Docs/`**: Contains additional documentation, hardware connection guides, and project photos.
+
 ## Getting Started
 
 To get started with this project, please refer to the specific `README.md` files in each subdirectory:
 
 *   For firmware development and deployment: `Firmware/README.md`
 *   For hardware design and manufacturing: `Altium/README.md`
+*   For detailed hardware connections and other documentation: `Docs/README.md`
