@@ -34,3 +34,4 @@ The project is organized into two main parts:
 To get started with this project, please refer to the specific `README.md` files in each subdirectory:
 
 *   For firmware development and deployment: `Firmware/README.md`
+*  For hardware design and manufacturing: `Hardware/README.md`
