@@ -1,0 +1,24 @@
+# DC Motor Regulator with BEMF Feedback
+## Software Required
+
+*   **Altium Designer:** You will need Altium Designer (version used for creation or compatible) to open, view, and modify these files.
+
+## Opening the Project
+
+1.  **Install Altium Designer:** Ensure you have Altium Designer installed on your system.
+2.  **Clone Repository:** Clone this project to your local machine.
+3.  **Open Project File:** Navigate to this `Altium/` directory and open the `.PrjPcb` file (e.g., `DCMotorRegulator.PrjPcb`) using Altium Designer.
+
+## Key Hardware Components
+
+The design typically includes:
+*   **STM32F103C8 Microcontroller:** The core processing unit.
+*   **Motor Driver:** An H-bridge circuit to control the DC motor (e.g., based on MOSFETs or an integrated driver IC).
+*   **Voltage Dividers:** Resistor networks for scaling down the motor voltage (VMOT) and BEMF for ADC input.
+*   **Potentiometers:** For user input (target speed, PID tuning).
+*   **Power Management:** Voltage regulators to supply the microcontroller and other components.
+*   **Connectors:** For motor, power, J-Link, and potentiometers.
+
+## Manufacturing
+
+Once the design is finalized, you can generate manufacturing outputs (Gerber files, NC Drill files, BOM, Pick & Place files) directly from Altium Designer to send to a PCB fabrication house and assembly service.
