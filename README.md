@@ -4,7 +4,7 @@
   <img src="docs/pcb_photo.jpg" alt="STM32 Motor Controller Board" width="700">
 </p>
 
-[cite_start]A closed-loop sensorless brushed DC motor speed regulator using **Back-Electromotive Force (BEMF)** sensing and a digital **PID control algorithm**[cite: 362]. Built around the **STM32F103C8** microcontroller with high-speed **SEGGER RTT** real-time telemetry.
+A closed-loop sensorless brushed DC motor speed regulator using **Back-Electromotive Force (BEMF)** sensing and a digital **PID control algorithm**. Built around the **STM32F103C8** microcontroller with high-speed **SEGGER RTT** real-time telemetry.
 
 ---
 
@@ -29,22 +29,23 @@ Dedicated signal conditioning circuitry with precision resistor dividers for BEM
 
 * **MCU**: STM32F103C8T6 (ARM Cortex-M3).
 * **Power Stage**: H-Bridge motor driver with flyback protection.
-* [cite_start]Altium Designer schematics, PCB layouts, and manufacturing Gerbers are located in [`/Hardware`](./Hardware)[cite: 369].
+* Altium Designer schematics, PCB layouts, and manufacturing Gerbers are located in [`/Hardware`](./Hardware).
 
 ---
 
 ### 2. Embedded Software (PlatformIO / C++)
 * **ADC Sampling**: Synchronized ADC conversions for accurate BEMF and $V_{MOT}$ readings.
-* [cite_start]**PWM Generation**: High-frequency timer-driven PWM with configurable duty cycle steps[cite: 370, 371].
+* **PWM Generation**: High-frequency timer-driven PWM with configurable duty cycle steps.
 * **Control Loop**: Discrete PID controller computing real-time error corrections.
 
-[cite_start]Source code, drivers, and PlatformIO configuration are located in [`/Firmware`](./Firmware)[cite: 373].
+Source code, drivers, and PlatformIO configuration are located in [`/Firmware`](./Firmware).
 
 ---
 
 ## 📂 Repository Structure
 
 ```text
-├── Hardware/   # Altium Designer schematics, PCB layout, Gerbers, BOM [cite: 373]
-├── Firmware/   # PlatformIO source code (C++), drivers, RTT config [cite: 373]
-└── docs/       # PCB photos, Altium 3D renders, and signal waveforms [cite: 373]
+├── Hardware/   # Altium Designer schematics, PCB layout, Gerbers, BOM
+├── Firmware/   # PlatformIO source code (C++), drivers, RTT config
+└── docs/       # PCB photos, Altium 3D renders, and signal waveforms
+```
